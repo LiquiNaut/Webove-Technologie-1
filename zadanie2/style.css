@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrapper {
+    background: url(Tenno.jpg) no-repeat;
+    background-size: cover;
+    height: 96vh;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: dimgray;
+    color: white;
+}
+
+img {
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 5%;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+ul li {
+    position: absolute;
+    z-index: 1000;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background: darkgoldenrod;
+    margin: 0 auto 0 0;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    top: -400px;
+}
+
+ul li:hover {
+    background: darkred;
+    box-shadow: 0 0 0 4px darkgoldenrod, 0 0 0 6px darkred;
+}
+
+ul li .content {
+    position: absolute;
+    bottom: 50px;
+    width: 400px;
+    background: grey;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+
+
+}
+
+ul li:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+}
+
+.dots {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 0 auto;
+    width: 50%;
+    left: 10%;
+}
+
+#loki {
+    left: 150px;
+}
+
+#ember {
+    left: 315px;
+}
+
+#rhino {
+    left: 460px;
+}
+
+#excalibur {
+    left: 615px;
+}
+
+#volt {
+    left: 750px;
+}
+
+#mag {
+    left: 870px;
+}
