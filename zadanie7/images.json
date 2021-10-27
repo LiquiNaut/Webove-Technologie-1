@@ -1,0 +1,50 @@
+{
+  "photos":
+  [
+    {
+      "src": "ExcalUmbra.jpg",
+      "title": "ExcalUmbra",
+      "description": "Picture depicting Excalibur Umbra warframe."
+    },
+    {
+      "src": "LiquicityLogo.jpg",
+      "title": "LiquicityLogo",
+      "description": "Picture of Liquicity Logo."
+    },
+    {
+      "src": "Loki.jpg",
+      "title": "Loki Warframe",
+      "description": "Picture of Loki Warframe."
+    },
+    {
+      "src": "Nyx.jpg",
+      "title": "Nyx Warframe",
+      "description": "Picture of Nyx Warframe."
+    },
+    {
+      "src": "Questionman.jpg",
+      "title": "Questionman",
+      "description": "Picture of man with head with questionmark."
+    },
+    {
+      "src": "Sunset.jpg",
+      "title": "Sunset",
+      "description": "Picture of boy in front of the sunset."
+    },
+    {
+      "src": "ThreeWarframes.jpg",
+      "title": "ThreeWarframes",
+      "description": "Picture of Rhino, Excalibur and Mesa."
+    },
+    {
+      "src": "TokyoGhoul.jpg",
+      "title": "TokyoGhoul",
+      "description": "Picture of Ken Kaneky from Tokyo Ghoul."
+    },
+    {
+      "src": "Warframes.jpg",
+      "title": "Warframes",
+      "description": "Picture of frames from the game Warfame."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #900C3F;
+    text-align: center;
+    color: #ffffaa;
+    padding: 1rem;
+}
+
+body{
+    background-color: #59D2C3;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #3B71EC;
+}
+
+.Imgview{
+    margin: 10px;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #59A1D2;
+    border-radius: 2em;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.Imgview:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+#gallery{
+    margin-top: 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
