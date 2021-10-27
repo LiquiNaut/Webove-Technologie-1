@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zadanie 5</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQtkwNirGrx7AqSnVzsl_g0XtN6vEH3QM&callback=initMap&libraries=&v=weekly" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Zadanie 5</h1>
+    </header>
+
+    <div id="placeSearch">
+        <input id="start" type="text" value="" placeholder="Zadaj mesto" />
+    </div>
+
+    <div id="travelMode">
+        <select id="mode">
+            <option selected="selected">Vyberte spôsob dopravy</option>
+            <option value="DRIVING">Auto</option>
+            <option value="WALKING">Chôdza</option>
+        </select>
+    </div>
+
+    <div id="button">
+        <button id="calcDist"><b>Vypočítaj trasu</b></button>
+    </div>
+
+    <div id="distances">
+        <b>Vzdialenosť:  </b><span id="distance"></span>
+    </div>
+
+    <div id="map"></div>
+    <div id="streetView"></div>
+    <br>
+
+    <footer>
+        <a href="https://is.stuba.sk/lide/clovek.pl?id=97779;lang=sk" target="_blank">&copy; 2020 Gašparovič Boris</a>
+    </footer>
+</body>
+</html>
