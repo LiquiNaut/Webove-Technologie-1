@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 5</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E"></script>
+
+
+
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <nav class="navbar">
+        <h2>Zadanie 5</h2>
+    </nav>
+    <div id="floating-panel-start">
+        <label for="start"></label>
+        <input id="start" type="text" placeholder="Zadaj mesto" value="" />
+    </div>
+    <div id="travel">
+        <select id="mode">
+            <option selected="selected">Vyberte spôsob dopravy</option>
+            <option value="DRIVING">Auto</option>
+            <option value="WALKING">Chôdza</option>
+        </select>
+    </div>
+    <div id="but">
+        <button id="calcDist" onclick="calculateAndDisplayRoute();"><b>Vypočítaj trasu</b></button>
+    </div>
+    <div id="but2">
+        <button id="busStop" type="submit" onclick="busStop();"><b>Zobraziť zastávky</b></button>
+    </div>
+    <div id="floating-panel-distance">
+        <b>Vzdialenosť: </b><span id="distance"></span>
+    </div>
+    <div id="map"></div>
+    <div id="streetView"></div>
+    <br>
+</div>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQtkwNirGrx7AqSnVzsl_g0XtN6vEH3QM&callback=initMap&libraries=places"
+        defer
+></script>
+</body>
+
+</html>
