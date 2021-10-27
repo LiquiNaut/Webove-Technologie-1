@@ -1,0 +1,19 @@
+.wrapper {
+    background: url(Background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+.input, .textarea {
+    background-color:#666;
+    color: #FFF;
+}
+
+.pocethracov, .lane, .inahra, .skryte {
+    display: none;
+}
+
+
+
