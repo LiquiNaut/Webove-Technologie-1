@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.column {
+    float: left;
+    width: 48.5%;
+    padding: 10px;
+    height: 500px;
+    margin: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.wrapper {
+    background: url(Background.jpg) no-repeat, center, center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 96vh;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Roboto', sans-serif;
+    transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: red;
+    border-radius: 2px;
+}
+
+.nav-name {
+    height: auto;
+    padding: 20px 50px;
+    color: white;
+    margin: fill;
+    line-height: 40px;
+    font-weight: 900;
+    font-size: 160%;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: darkslateblue;
+    color: white;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
