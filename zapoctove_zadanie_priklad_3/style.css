@@ -1,0 +1,12 @@
+body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+    margin: 0;
+}
+
+#priklad_2>* {
+    border: 1px dashed black;
+}
