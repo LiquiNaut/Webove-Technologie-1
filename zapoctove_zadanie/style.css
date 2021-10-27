@@ -1,0 +1,13 @@
+body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+    margin: 0;
+}
+
+#priklad_1>* {
+    border: 1px dashed black;
+}
+
