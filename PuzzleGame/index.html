@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Puzzle Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<div class="head">
+    <h1 class="title head-item">Puzzle</h1>
+    <h2 class="timer head-item">Timer: <span id="minutes">0</span>:<span id="seconds">0</span> </h2>
+    <div class="btn-container">
+        <button id="Btn1" onclick="restartGame()">Restart</button>
+        <button id="Btn2" onclick="showDemo()">Demo</button>
+    </div>
+</div>
+
+<div id="plus-plus" class="drop-img-container">
+    <div id="plus" class="drop-img">
+        <div class="dropContainer" id="part1" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+        <div class="mid-part-container">
+            <div class="dropContainer" id="part2" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+            <div class="dropContainer" id="part3" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+            <div class="dropContainer" id="part4" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+        </div>
+        <div class="bottom-part-container">
+            <div class="dropContainer" id="part5" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+            <div class="dropContainer" id="part6" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+            <div class="dropContainer" id="part7" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+            <div class="dropContainer" id="part8" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+        </div>
+        <div class="dropContainer" id="part9" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+    </div>
+
+    <div id="img-parts" class="draggable-elements">
+        <div id="imgContainer1" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart1" alt="draggable pokemon whole head" class="draggable-item" src="penguin/pokemon-whole-head.png" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+        <div id="imgContainer2" class="dragContainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart2" alt="draggable pokemon left wing" class="" src="penguin/pokemon-left-wing.png" width="74.5" height="112.5" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+        <div id="imgContainer3" class="dragContainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart3" alt="draggable pokemon left foot" class="" src="penguin/pokemon-scarf.png" width="134" height="81.5" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+        <div id="imgContainer4" class="dragContainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart4" alt="draggable pokemon right wing" class="draggable-item" src="penguin/pokemon-right-wing.png" width="62.5" height="90" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+        <div id="imgContainer5" class="dragContainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart5" alt="draggable pokemon left foot" class="draggable-item" src="penguin/pokemon-left-foot.png" width="135.5" height="158.5" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+        <div id="imgContainer6" class="dragContainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart6" alt="draggable pokemon torso" class="draggable-item" src="penguin/pokemon-torso.png" width="220" height="87" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+        <div id="imgContainer7" class="dragContainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart7" alt="draggable pokemon tail 1" class="draggable-item" src="penguin/pokemon-tail-1.png" width="76.5" height="99" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+        <div id="imgContainer8" class="dragContainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart8" alt="draggable pokemon tail 2" class="draggable-item" src="penguin/pokemon-tail-2.png" width="56" height="62.5" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+        <div id="imgContainer9" class="dragContainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="draggablepart9" alt="draggable pokemon right foot" class="draggable-item" src="penguin/pokemon-right-foot.png" width="225.5" height="180.5" draggable="true" ondragstart="drag(event)" empty="false">
+        </div>
+    </div>
+</div>
+<footer>
+    <p>Author: Boris Gašparovič<br>
+        <a href="mailto:xgasparovicb@stuba.sk">xgasparovicb@stuba.sk</a></p>
+</footer>
+</body>
+<script src="script.js"></script>
+<script src="dragdroptouch.js"></script>
+</html>
